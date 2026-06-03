@@ -1,48 +1,112 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: #07111f;
-    color: white;
-    font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background: #07111f;
+color: white;
+font-family: Arial, sans-serif;
+}
+
+section {
+padding: 70px 20px;
+text-align: center;
 }
 
 .hero {
-    text-align: center;
-    padding: 60px 20px;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 h1 {
-    font-size: 3rem;
-    max-width: 900px;
-    margin: auto;
-    margin-bottom: 20px;
+font-size: 3rem;
+max-width: 900px;
+margin: auto;
+margin-bottom: 20px;
+}
+
+h2 {
+margin-bottom: 25px;
 }
 
 .subtitle {
-    font-size: 1.3rem;
-    color: #7db7ff;
+font-size: 1.3rem;
+color: #7db7ff;
 }
 
-.hero-image {
-    width: 80%;
-    max-width: 600px;
-    border-radius: 20px;
-    margin-top: 30px;
-    box-shadow: 0 0 30px rgba(0,123,255,0.3);
+.hero-image,
+.medalla img,
+.sentimientos img,
+.slide,
+video {
+width: 90%;
+max-width: 700px;
+border-radius: 20px;
+margin-top: 20px;
+box-shadow: 0 0 25px rgba(0,123,255,0.25);
 }
 
 .counter-box {
-    margin-top: 40px;
-    padding: 20px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 20px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+margin-top: 40px;
+padding: 25px;
+background: rgba(255,255,255,0.05);
+border-radius: 20px;
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
 }
 
 #contador {
-    font-size: 1.5rem;
-    margin-top: 15px;
-    color: #8fc5ff;
+font-size: 1.5rem;
+color: #8fc5ff;
+}
+
+p {
+max-width: 850px;
+margin: 15px auto;
+line-height: 1.8;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+li {
+margin: 15px 0;
+font-size: 1.1rem;
+}
+
+.carrusel {
+max-width: 700px;
+margin: auto;
+}
+
+.slide {
+display: none;
+}
+
+.activo {
+display: block;
+}
+
+button {
+background: #1d6fff;
+color: white;
+border: none;
+border-radius: 15px;
+padding: 15px 25px;
+font-size: 1rem;
+cursor: pointer;
+}
+
+button:hover {
+transform: scale(1.05);
+}
+
+#cartaOculta {
+margin-top: 30px;
+background: rgba(255,255,255,0.05);
+padding: 25px;
+border-radius: 20px;
 }
