@@ -82,45 +82,25 @@ function cambiarSlide() {
 setInterval(cambiarSlide, 3000);
 
 const historia = `Si soy sincera, al principio éramos solo conocidos.
-
 No era que habláramos mucho ni nada por el estilo.
-
 Pero hubo un momento donde empezamos a cruzar miradas.
-
 No pasó nada después de eso, simplemente pasó.
-
 Un día vino un amigo tuyo y me tiró una indirecta.
-
 Y yo estaba completamente en el aire.
-
 Porque no era que tú y yo habláramos, así que no entendía nada de lo que estaba pasando.
-
 Después me preguntó si quería bailar para una actividad del 27.
-
 Yo le seguí la corriente sin pensar mucho.
-
 Entonces me llevó donde estabas tú y dijo que yo quería bailar contigo.
-
 En ese momento me puse tan nerviosa que te hice señas de que no.
-
 Todavía me da risa acordarme.
-
 Luego una de mis amigas me decía que todo eso estaba raro y yo seguía diciendo:
-
 "na que ver".
-
 La realidad es que sí me parecías atractivo.
-
 Lo negué como diez veces.
-
 Pero al mismo tiempo buscaba cualquier excusa para mirarte o para cruzar unas cuantas palabras contigo.
-
 Más adelante hablé con tu amigo y él me decía que te hablara.
-
 Pero yo le respondí que me daba pena.
-
 Y sin darme cuenta...
-
 ahí fue donde empezó todo. 💙`;
 
 let i = 0;
