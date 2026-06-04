@@ -1,39 +1,39 @@
 function actualizarContador() {
 
-```
-const fechaInicio = new Date("2026-02-06T00:00:00");
-const ahora = new Date();
+    const fechaInicio = new Date("2026-02-06T00:00:00");
+    const ahora = new Date();
 
-const diferencia = ahora - fechaInicio;
+    const diferencia = ahora - fechaInicio;
 
-const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const dias = Math.floor(
+        diferencia / (1000 * 60 * 60 * 24)
+    );
 
-const horas = Math.floor(
-    (diferencia % (1000 * 60 * 60 * 24)) /
-    (1000 * 60 * 60)
-);
+    const horas = Math.floor(
+        (diferencia % (1000 * 60 * 60 * 24))
+        / (1000 * 60 * 60)
+    );
 
-const minutos = Math.floor(
-    (diferencia % (1000 * 60 * 60)) /
-    (1000 * 60)
-);
+    const minutos = Math.floor(
+        (diferencia % (1000 * 60 * 60))
+        / (1000 * 60)
+    );
 
-const segundos = Math.floor(
-    (diferencia % (1000 * 60)) /
-    1000
-);
+    const segundos = Math.floor(
+        (diferencia % (1000 * 60))
+        / 1000
+    );
 
-const contador = document.getElementById("contador");
+    const contador = document.getElementById("contador");
 
-if (contador) {
-    contador.innerHTML =
-        dias + " días • " +
-        horas + " horas • " +
-        minutos + " minutos • " +
-        segundos + " segundos";
-}
-```
+    if (contador) {
 
+        contador.innerHTML =
+            dias + " días • " +
+            horas + " horas • " +
+            minutos + " minutos • " +
+            segundos + " segundos";
+    }
 }
 
 setInterval(actualizarContador, 1000);
@@ -41,52 +41,45 @@ actualizarContador();
 
 function mostrarCarta() {
 
-```
-const carta = document.getElementById("cartaOculta");
+    const carta = document.getElementById("cartaOculta");
 
-if (!carta) return;
+    if (!carta) return;
 
-if (
-    carta.style.display === "none" ||
-    carta.style.display === ""
-) {
-    carta.style.display = "block";
-} else {
-    carta.style.display = "none";
-}
-```
+    if (
+        carta.style.display === "none" ||
+        carta.style.display === ""
+    ) {
 
+        carta.style.display = "block";
+
+    } else {
+
+        carta.style.display = "none";
+    }
 }
 
 let indice = 0;
 
 function cambiarSlide() {
 
-```
-const slides = document.querySelectorAll(".slide");
+    const slides = document.querySelectorAll(".slide");
 
-if (slides.length === 0) return;
+    if (slides.length === 0) return;
 
-slides.forEach(slide => {
-    slide.classList.remove("activo");
-});
+    slides.forEach(slide => {
+        slide.classList.remove("activo");
+    });
 
-indice++;
+    indice++;
 
-if (indice >= slides.length) {
-    indice = 0;
-}
+    if (indice >= slides.length) {
+        indice = 0;
+    }
 
-slides[indice].classList.add("activo");
-```
-
+    slides[indice].classList.add("activo");
 }
 
 setInterval(cambiarSlide, 3000);
-
-window.addEventListener("load", () => {
-document.body.style.opacity = "1";
-});
 
 const historia = `Si soy sincera, al principio éramos solo conocidos.
 
@@ -134,21 +127,23 @@ let i = 0;
 
 function escribirHistoria() {
 
-```
-const elemento = document.getElementById("textoHistoria");
+    const elemento = document.getElementById("textoHistoria");
 
-if (!elemento) return;
+    if (!elemento) return;
 
-if (i < historia.length) {
+    if (i < historia.length) {
 
-    elemento.innerHTML += historia.charAt(i);
+        elemento.innerHTML += historia.charAt(i);
 
-    i++;
+        i++;
 
-    setTimeout(escribirHistoria, 30);
-}
-```
-
+        setTimeout(escribirHistoria, 30);
+    }
 }
 
-window.addEventListener("load", escribirHistoria);
+window.addEventListener("load", () => {
+
+    document.body.style.opacity = "1";
+
+    escribirHistoria();
+});
