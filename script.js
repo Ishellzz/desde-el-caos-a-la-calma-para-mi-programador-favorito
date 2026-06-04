@@ -28,7 +28,6 @@ const segundos = Math.floor(
 const contador = document.getElementById("contador");
 
 if (contador) {
-
     contador.innerHTML =
         dias + " días • " +
         horas + " horas • " +
@@ -53,18 +52,13 @@ if (
     carta.style.display === "none" ||
     carta.style.display === ""
 ) {
-
     carta.style.display = "block";
-
 } else {
-
     carta.style.display = "none";
 }
 ```
 
 }
-
-/* Carrusel automático */
 
 let indice = 0;
 
@@ -92,17 +86,9 @@ slides[indice].classList.add("activo");
 
 setInterval(cambiarSlide, 3000);
 
-/* Animación suave al cargar */
-
 window.addEventListener("load", () => {
-
-```
 document.body.style.opacity = "1";
-```
-
 });
-
-/* Historia que se escribe sola */
 
 const historia = `Si soy sincera, al principio éramos solo conocidos.
 
